@@ -1,0 +1,54 @@
+@import url(variables.css);
+*{
+padding:0;
+margin: 0;
+font-family: "EncodeSans-Regular";
+box-sizing: border-box;
+}
+
+.header {
+    background-color: #3169e4;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    margin-top: 30px;
+}
+
+
+.header_up {
+  padding-top: 10px;
+  margin-top: 15px;
+
+}
+
+.header_up h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 25px;    
+}
+
+.header_up p{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+
+.nav_search{
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav_search input{
+    width: 100%;
+    background-color: #00000080;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+    outline: none;
+}
