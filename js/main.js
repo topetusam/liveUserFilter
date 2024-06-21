@@ -7,7 +7,7 @@ function fetchAllUsers() {
     fetch('https://6674179975872d0e0a950e53.mockapi.io/user')
         .then(response => response.json())
         .then(data => {
-            console.log(data); // Verificar los datos obtenidos de la API
+            console.log('Datos obtenidos:', data); // Verificar los datos obtenidos de la API
             allUsers = data;
             displayUsers(allUsers);
         })
@@ -37,23 +37,13 @@ function displayUsers(users) {
 // Función para buscar usuarios en tiempo real
 function searchUsers() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    console.log('Término de búsqueda:', searchTerm); // Verificar el término de búsqueda
     const filteredUsers = allUsers.filter(user =>
         user.name_full.toLowerCase().includes(searchTerm) || user.description.toLowerCase().includes(searchTerm)
     );
+    console.log('Usuarios filtrados:', filteredUsers); // Verificar los usuarios filtrados
     displayUsers(filteredUsers);
 }
 
 // Obtener todos los usuarios cuando la página cargue
 fetchAllUsers();
-
-function fetchAllUsers() {
-    fetch('https://6674179975872d0e0a950e53.mockapi.io/user')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data); // Verificar los datos obtenidos de la API
-            allUsers = data;
-            displayUsers(allUsers);
-        })
-        .catch(error => console.error('Error:', error));
-}
-

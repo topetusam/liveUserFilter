@@ -1,9 +1,10 @@
 @import url(variables.css);
-*{
-padding:0;
-margin: 0;
-font-family: "EncodeSans-Regular";
-box-sizing: border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "EncodeSans-Regular";
+    box-sizing: border-box;
 }
 
 .header {
@@ -14,11 +15,9 @@ box-sizing: border-box;
     margin-top: 30px;
 }
 
-
 .header_up {
-  padding-top: 10px;
-  margin-top: 15px;
-
+    padding-top: 10px;
+    margin-top: 15px;
 }
 
 .header_up h2 {
@@ -27,22 +26,20 @@ box-sizing: border-box;
     margin-left: 25px;    
 }
 
-.header_up p{
+.header_up p {
     color: #ffffff;
     font-size: 20px;
     margin-left: 25px;
     margin-top: 5px;
 }
 
-
-
-.nav_search{
+.nav_search {
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.nav_search input{
+.nav_search input {
     width: 100%;
     background-color: #00000080;
     height: 45px;
@@ -53,85 +50,44 @@ box-sizing: border-box;
     outline: none;
     font-size: 20px;
     color: #ffffff;
-
 }
 
-.people_search{
+.people_search {
     display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
     background-color: #ffffff;
-    height: 150%;
-    width: 100%;
-    position: absolute;
-    overflow-y: scroll;
-    margin-top: 20px;
-    margin-left: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    overflow-y: auto;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-right: 20px;
 }
 
-.persona1{
-    width: 100px;
-    height: 100px;
-    grid-row: 1;
-}
-.persona1 img{
-grid-column: 1;
+.user .text {
+    flex-grow: 1;
 }
 
-.text1 {
-    grid-column: 2;
+.user .text h2 {
+    margin: 0;
+    font-size: 20px;
 }
 
-.persona2{
-    width: 100px;
-    height: 100px;
-    border-radius:  50%;
-    grid-row: 2;
+.user .text small {
+    color: #888;
+    font-size: 16px;
 }
-
-.persona2 img{
-    grid-column: 1;
-
-}
-
-.text2 {
-    grid-column: 2;
-
-
-}   
-
-
-.persona3{
-    width: 40px;
-    height: 40px;
-    border-radius:  50%;
-    grid-row: 3;
-}
-  
-
-.persona4{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    grid-row: 4;
-}
-
-
-.persona5{
-    width: 40px;
-    height: 40px;
-    border-radius:  50%;
-    grid-row: 5;
-}
-
-
-
-.persona6{
-    width: 40px;
-    height: 40px;
-    border-radius:  50%;
-    grid-row: 6;
-}
-
-
