@@ -58,8 +58,8 @@ box-sizing: border-box;
 
 .people_search{
     display: grid;
-    grid-template-columns: auto ;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto auto auto;
     background-color: #ffffff;
     height: 150%;
     width: 100%;
@@ -76,7 +76,11 @@ box-sizing: border-box;
     grid-row: 1;
 }
 .persona1 img{
-grid-column: 2;
+grid-column: 1;
+}
+
+.text1 {
+    grid-column: 2;
 }
 
 .persona2{
@@ -86,7 +90,17 @@ grid-column: 2;
     grid-row: 2;
 }
 
+.persona2 img{
+    grid-column: 1;
+
 }
+
+.text2 {
+    grid-column: 2;
+
+
+}   
+
 
 .persona3{
     width: 40px;
@@ -95,7 +109,6 @@ grid-column: 2;
     grid-row: 3;
 }
   
-}
 
 .persona4{
     width: 40px;
